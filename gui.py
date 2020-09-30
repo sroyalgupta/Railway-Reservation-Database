@@ -20,11 +20,11 @@ heading=ttk.Label(win,text="Welcome to Indian Railways!!")
 heading.grid(row=0,column=1)
 
 source_label=ttk.Label(win,text="Enter the source station : ")
-source_label.grid(row=1,column=0,sticky=tk.W)
+source_label.grid(row=2,column=10,sticky=tk.W)
 
 src=tk.StringVar()
-source_box=ttk.Entry(win,width=16,textvariable=src)
-source_box.grid(row=1,column=1)
+source_box=ttk.Entry(win,width=18,textvariable=src)
+source_box.grid(row=3,column=3)
 source_box.focus()
 
 dest_label=ttk.Label(win,text="Enter the destination station : ")
@@ -80,7 +80,7 @@ submit_button=ttk.Button(win,text="Check",command=action2)
 submit_button.grid(row=5,column=0)
 
 ticket_label=ttk.Label(win,text="Want to book ticket.......")
-ticket_label.grid(row=6,column=0,sticky=tk.W)
+ticket_label.grid(row=8,column=1,sticky=tk.W)
 
 def action3():
     win.withdraw()
